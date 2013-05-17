@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package web.httpclient;
+
+import org.apache.commons.httpclient.*;
+import org.apache.commons.httpclient.methods.*;
+import org.apache.commons.httpclient.params.HttpMethodParams;
+
+import java.io.*;
+
+/**
+ * @author Shiksha.Gupta
+ *
+ */
+public class HttpClientTutorial {
+	private static String url = "http://www.apache.org/";
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	    
+	    HttpClient client = new HttpClient(); // Create an instance of HttpClient.
+	    GetMethod method = new GetMethod(url); // Create a method instance.	    
+	    method.getParams().setParameter(HttpMethodParams.RETRY_HANDLER,new DefaultHttpMethodRetryHandler(3, false));// Provide custom retry handler is necessary
+
+
+	}
+
+}

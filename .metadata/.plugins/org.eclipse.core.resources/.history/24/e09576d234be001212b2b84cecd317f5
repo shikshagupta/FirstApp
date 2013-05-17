@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package set1;
+
+/**
+ * @author Shiksha.Gupta
+ *
+ */
+public class HttpGetter {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

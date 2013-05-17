@@ -1,0 +1,52 @@
+/**
+ * 
+ */
+
+/**
+ * @author Shiksha.Gupta
+ *
+ */
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.StringReader;
+import java.lang.reflect.Array;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import psl.api.ssapi.client.SSRestServiceClient;
+import psl.api.ssapi.model.AvailableTrip;
+import psl.api.ssapi.model.AvailableTripList;
+import psl.api.ssapi.model.CityList;
+import psl.api.ssapi.model.DateParameter;
+
+import org.json.*;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+
+
+public class MediaPlayer {
+	private static final String consumerKey = "ANwhpxc7owtm3HurEaxVHvC3HS1qqz";
+    private static final String consumerSecret = "bO7y2b68jlxr5UMVoGDw1d5phOjpj8";
+    private static final SSRestServiceClient client = SSRestServiceClient.getInstance("http://api.seatseller.travel", consumerKey,consumerSecret);
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
